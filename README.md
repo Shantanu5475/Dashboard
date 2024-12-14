@@ -18,9 +18,14 @@ Data: The dashboard uses mock data for now, but the plan is to connect to a back
 
 
 2. Challenges Faced and How They Were Resolved:
+
 Challenge 1: Creating a Responsive Layout
 Problem: Ensuring that the dashboard was responsive across various screen sizes (desktop, tablet, and mobile) was challenging. Specifically, the sidebar and elements had to be adjusted to fit smaller screens without losing functionality or usability.
 Solution: I implemented responsive CSS using media queries to adjust the layout based on screen size. For smaller screens, I made the sidebar collapsible and adjusted the widths and padding of the elements. On mobile devices, I also included a hamburger menu for better navigation.
+
+Challenge 2: Managing State for Dynamic Content
+Problem: Managing dynamic content for the dashboard was complex, especially when dealing with multiple components.
+Solution: I utilized React’s useState and useEffect hooks to manage the state of dynamic content. For example, I used useState to manage the visibility of the sidebar and charts, and useEffect to fetch data and update components accordingly. This ensured that the dashboard would update in real time without unnecessary re-renders.
 
 3. Assumptions made:
 I made the assumption that the backgound is also  a part of the display and that the buttons like progress bar ,submit button and upload button are connected with the backend.
