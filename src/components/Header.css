@@ -5,8 +5,8 @@
     align-items: center;
     padding: 15px 25px;
     background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0; /* Optional: Uncomment for a subtle border */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Uncomment for subtle shadow */
+    border-bottom: 1px solid #e0e0e0; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
   }
   
   /* Header Left (Logo + Progress Tracker) */
