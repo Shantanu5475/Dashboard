@@ -1,74 +1,26 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+Dashboard App -
+This is my submission to the task to replicate a dashboard image.
+Tech Stack- React.js,Tailwind css
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+How to run-copy the code and on your local machine type npm run.
 
-## Available Scripts
+1. Approach to Building the Dashboard:
+The dashboard project was designed with the aim to create an intuitive and functional user interface that displays relevant data in an organized and visually appealing manner. Here's the approach I followed:
 
-In the project directory, you can run:
+Planning and Design:
+Understanding Requirements: Initially, I gathered the necessary requirements for the dashboard, including the key data points that needed to be displayed .
 
-### `npm start`
+Component Structure: The application was built using React to ensure reusable components, with the key components being the sidebar, top bar, main content area,
+Tech Stack:
+Frontend: React.js for the UI, with a focus on components.
+Styling: CSS for responsive design, ensuring the dashboard is functional across devices (desktop, tablet, mobile). The design is made mobile-responsive through media queries.
+Data: The dashboard uses mock data for now, but the plan is to connect to a back-end service or an API for dynamic data fetching.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Challenges Faced and How They Were Resolved:
+Challenge 1: Creating a Responsive Layout
+Problem: Ensuring that the dashboard was responsive across various screen sizes (desktop, tablet, and mobile) was challenging. Specifically, the sidebar and elements had to be adjusted to fit smaller screens without losing functionality or usability.
+Solution: I implemented responsive CSS using media queries to adjust the layout based on screen size. For smaller screens, I made the sidebar collapsible and adjusted the widths and padding of the elements. On mobile devices, I also included a hamburger menu for better navigation.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Dashboard
->>>>>>> 9a27d541e5a0e7d919e8067e8d446b1186cb260e
+3. Assumptions made:
+I made the assumption that the backgound is also  a part of the display and that the buttons like progress bar ,submit button and upload button are connected with the backend.
