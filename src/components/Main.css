@@ -1,0 +1,193 @@
+/* Base Styles */
+.main-content {
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  margin: 15px 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.blueline {
+  background-color: #007bff;
+  height: 3px;
+  width: 300px;
+  margin-left: 10%;
+  border-radius: 10px;
+}
+
+.section-title {
+  padding: 30px;
+  font-size: 20px;
+  color: #333;
+}
+
+.section-title span {
+  font-weight: normal;
+  font-size: 16px;
+  color: #888;
+}
+
+.claim-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px;
+  border-top: solid 1px #f5f4fc;
+}
+
+.claim-value,
+.place,
+.language {
+  background: #fff;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f5f4fc;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: blue;
+  outline: none;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group label {
+  margin-right: 15px;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.highlight {
+  font-size: 12px;
+  color: #ff5722;
+  margin-top: 10px;
+}
+
+.documents-section {
+  display: flex;
+  gap: 20px;
+  border-top: solid 1px #f5f4fc;
+  padding: 20px;
+}
+
+.statement,
+.agreements,
+.additional-documents {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+}
+
+.upload-box-agreement,
+.upload-box-statement,
+.upload-box-additional {
+  border: 2px dashed #007bff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f5f4fc;
+}
+
+.upload-box-statement {
+  border-style: solid;
+}
+
+.upload-box:hover {
+  background: #f0f8ff;
+}
+
+.add-more {
+  font-size: 24px;
+  color: #007bff;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Responsive Design */
+
+/* Tablet and Medium Screens */
+@media (max-width: 1024px) {
+  .claim-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .blueline {
+    width: 250px;
+    margin-left: 5%;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .main-content {
+    margin: 10px;
+  }
+
+  .claim-section {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .documents-section {
+    flex-direction: column;
+  }
+
+  .blueline {
+    width: 200px;
+    margin-left: 5%;
+  }
+
+  .upload-box-agreement,
+  .upload-box-statement,
+  .upload-box-additional {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .add-more {
+    font-size: 20px;
+  }
+}

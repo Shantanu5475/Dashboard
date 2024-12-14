@@ -1,0 +1,141 @@
+/* Sidebar Section */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for collapsing */
+  position: relative;
+}
+
+.sidebar.collapsed {
+  transform: translateX(-250px); /* Slide the sidebar out */
+}
+
+.img {
+  width: 65px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 15px 0;
+  padding: 10px;
+  color: #444;
+  opacity: 0.6;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.nav-menu li:hover {
+  color: #007bff;
+}
+
+.promo-section {
+  text-align: center;
+}
+
+.promo-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.promo-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Hamburger menu style */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  font-size: 30px;
+  color: #444;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nav-menu li {
+    margin: 12px 0;
+  }
+
+  .promo-text {
+    font-size: 12px;
+  }
+
+  .sidebar.collapsed {
+    transform: translateX(-200px); /* Adjusted for smaller tablet width */
+  }
+
+  /* Show hamburger icon on tablets */
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+/* Responsive Design for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    transform: translateX(-100%); /* Initially hide off-screen */
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .logo {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .promo-text {
+    font-size: 12px;
+  }
+
+  .promo-section {
+    margin-top: 20px;
+  }
+
+  .promo-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .sidebar.collapsed {
+    transform: translateX(-100%); /* Full-width on mobile */
+  }
+}

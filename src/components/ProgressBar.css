@@ -1,0 +1,189 @@
+/* Base Styles */
+.progress-bar-head {
+    display: flex;
+    align-items: center;
+    background-color: #f5f4fc;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.progress-bar-icons {
+    display: flex;
+    align-items: center;
+    background-color: #f5f4fc;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.progress-bar-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f4fc;
+    border-radius: 10px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    text-align: center;
+    flex-direction: column;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #888;
+    font-weight: bold;
+    border: 2px solid #007bff;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.circle.completed {
+    background: #007bff;
+    color: #fff;
+}
+
+.circle.completed::before {
+    content: '\2713'; /* Unicode checkmark symbol */
+    color: white;
+    font-size: 18px;
+}
+
+.circle.current {
+    background: #fff;
+    color: #007bff;
+}
+
+.line {
+    height: 3px;
+    flex: 1;
+    width: 9.4vw;
+}
+
+.line.completed {
+    background: #007bff;
+}
+
+.line.dotted {
+    border-top: 2px dashed #007bff;
+}
+
+.line.faded {
+    background: #007bff;
+    opacity: 0.2;
+}
+
+.completedicon:first-child{
+    padding-left: 80px;
+}
+
+.label {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 5vw;
+}
+
+.time-estimate {
+    font-size: 12px;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+.extra.space {
+    padding-left: 50px;
+}
+
+
+
+/* Hide progress bar for Tablet and Mobile views */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    .progress-bar-head,
+    .progress-bar-icons,
+    .progress-bar-foot {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .step {
+        margin-bottom: 20px;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .circle {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .line {
+        width: 20px;
+        height: 2px;
+    }
+
+    .label {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    /* Hide the entire progress bar for tablets */
+    .progress-bar-head,
+    .progress-bar-icons,
+    .progress-bar-foot {
+        display: none;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .progress-bar-head,
+    .progress-bar-icons,
+    .progress-bar-foot {
+        padding: 10px 5px;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .circle {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .line {
+        width: 15px;
+        height: 2px;
+    }
+
+    .label {
+        font-size: 8px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    /* Hide the entire progress bar for mobile */
+    .progress-bar-head,
+    .progress-bar-icons,
+    .progress-bar-foot {
+        display: none;
+    }
+}

@@ -1,0 +1,110 @@
+.app-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 5%;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+/* Sidebar takes fixed width */
+.sidebar {
+  flex: 0 0 250px;
+}
+
+/* Hero Section */
+.hero {
+  border-style: solid;
+  background-color: #f4f5fc;
+  border-radius: 20px;
+  border-color: #f4f5fc;
+}
+
+/* Main Label */
+.main-label {
+  font-size: 15px;
+  color: gray;
+}
+
+/* Select Element Styling */
+select {
+  padding: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+/* Hero Background */
+.herobg {
+  background-color: #fff;
+}
+
+/* Main Layout */
+.main-layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f7fa;
+}
+
+/* Apply some global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 2%; /* Reduce outer margin */
+  }
+
+  .sidebar {
+    flex: 0 0 200px; /* Reduce sidebar width */
+  }
+
+  .main-label {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .select {
+    font-size: 13px;
+    padding: 4px;
+  }
+
+  .hero {
+    border-radius: 15px;
+  }
+}
+
+/* Responsive Design for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .app-container {
+    flex-direction: column; /* Stack sidebar and content vertically */
+    margin: 0; /* Remove outer margin for full-width layout */
+    padding: 10px; /* Add padding for content */
+  }
+
+  .sidebar {
+    flex: 0 0 auto; /* Allow sidebar to adjust height dynamically */
+    width: 100%; /* Full-width sidebar on mobile */
+    margin-bottom: 15px; /* Add spacing between sidebar and main content */
+  }
+
+  .main-layout {
+    flex: 1;
+    width: 100%; /* Full-width layout for main content */
+  }
+
+  .hero {
+    border-radius: 10px;
+    padding: 10px; /* Add padding for smaller screens */
+  }
+
+  .main-label {
+    font-size: 13px; /* Smaller font size */
+  }
+
+  select {
+    font-size: 12px;
+    padding: 3px; /* Adjust padding for smaller screens */
+  }
+}
